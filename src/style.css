@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+html, body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+.App .container {
+  height: 600px;
+  width: 400px;
+  border: 2px solid black;
+  border-radius: 14px;
+  padding: 5px;
+  background-color: grey;
+}
+
+.App .container .grid {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  gap: 1%;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[7];
+      grid-template-rows: repeat(7, 1fr);
+      grid-template-areas: "display display display display" "display display display display" "AC AC div times" "seven eight nine minus" "four five six plus" "one two three equal" "zero zero dot equal";
+}
+
+.App .container .grid .display {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: display;
+  border-radius: 14px;
+  padding: 20px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .container .grid .display input {
+  width: 100%;
+  height: 50%;
+  text-align: right;
+  background-color: transparent;
+  border: none;
+  font-size: 40px;
+}
+
+.App .container .grid .display .total {
+  text-align: right;
+  font-size: 60px;
+  width: 100%;
+  height: 50%;
+}
+
+.App .container .grid .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 30px;
+  background-color: white;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.App .container .grid .button:hover {
+  background-color: black;
+  color: white;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.App .container .grid .button.AC {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: AC;
+}
+
+.App .container .grid .button.div {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: div;
+}
+
+.App .container .grid .button.times {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: times;
+}
+
+.App .container .grid .button.seven {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: seven;
+}
+
+.App .container .grid .button.eight {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: eight;
+}
+
+.App .container .grid .button.nine {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: nine;
+}
+
+.App .container .grid .button.minus {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: minus;
+}
+
+.App .container .grid .button.four {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: four;
+}
+
+.App .container .grid .button.five {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: five;
+}
+
+.App .container .grid .button.six {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: six;
+}
+
+.App .container .grid .button.plus {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+  grid-area: plus;
+}
+
+.App .container .grid .button.one {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: one;
+}
+
+.App .container .grid .button.two {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: two;
+}
+
+.App .container .grid .button.three {
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+  grid-area: three;
+}
+
+.App .container .grid .button.equal {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: equal;
+}
+
+.App .container .grid .button.zero {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: zero;
+}
+
+.App .container .grid .button.dot {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+  grid-area: dot;
+}
+/*# sourceMappingURL=style.css.map */
